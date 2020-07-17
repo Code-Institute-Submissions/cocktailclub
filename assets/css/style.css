@@ -42,3 +42,9 @@ body {
     height: 40px;
     padding: 15px 5px 5px 15px
 }
+
+/*----------------------Cocktail Search */
+.searchheader {
+    text-align: center;
+    padding-top: 50px;
+}
