@@ -1,1 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap');
+
+/*---------------------General */
+body {
+    font-family: Poppins, sans-serif;
+    color: #000;
+}
+
+.sectionheader {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
+/*----------------------Nav */
+.navbar {
+    
+}
+
+.navmenu {
+    float: right;
+    list-style: none;
+    overflow: hidden;
+}
+
+.navitem {
+    display: inline;
+    padding-top: 20px;
+}
+
+.navitem a {
+    font-family: Poppins, sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.logo {
+    left: 0;
+    right: 0;
+    height: 40px;
+    padding: 15px 0px 0px 15px
+}
