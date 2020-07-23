@@ -48,3 +48,28 @@ body {
     text-align: center;
     padding-top: 50px;
 }
+
+/*----------------------Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.socials {
+    font-size: 35px;
+    padding: 20px 0;
+}
+
+.socials li a i {
+    color: #fff;
+    
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.socials li a i:hover {
+    color: #f5ab92;
+}
