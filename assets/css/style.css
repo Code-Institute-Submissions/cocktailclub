@@ -6,9 +6,12 @@ body {
     color: #000;
 }
 
-.sectionheader {
+.section-header {
     font-family: "Poppins", sans-serif;
-    color: #000;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
 }
 
 /*----------------------Nav */
@@ -52,11 +55,7 @@ body {
 }
 
 /*----------------------Cocktail Search */
-.searchheader {
-    text-align: center;
-    padding-top: 50px;
-    font-weight: 700;
-}
+
 
 /*----------------------Footer */
 
