@@ -56,6 +56,26 @@ body {
 
 /*----------------------Cocktail Search */
 
+/*----------------------Info Page */
+.banner-image {
+    background: url("file:///images/unsplashcocktailequipment.jpg")no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #info-banner-top {
+    padding: 10px 5px 10px 20px;
+}
+
+#info-banner-bottom {
+    padding: 10px 5px 10px 20px;
+} */
+
 
 /*----------------------Footer */
 
