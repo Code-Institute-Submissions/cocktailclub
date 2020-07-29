@@ -32,7 +32,7 @@ body {
 }
 
 .navitem a {
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #000;
     text-decoration: none;
     padding-left: 30px;
@@ -57,24 +57,42 @@ body {
 /*----------------------Cocktail Search */
 
 /*----------------------Info Page */
-.banner-image {
-    background: url("file:///images/unsplashcocktailequipment.jpg")no-repeat bottom right fixed;
+.hero-image {   
+    height: 70vw;
+    background: url("../images/unsplashcocktailequipment.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+}
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
 }
 
-/* #info-banner-top {
-    padding: 10px 5px 10px 20px;
+.hero-text-top {
+    color: #fff;
+    margin: 5px 10px 10px 10px;
+    padding: 40px 10px 10px 10px;
+    
+    /* background: rgba(0,0,0,.5); */
 }
 
-#info-banner-bottom {
-    padding: 10px 5px 10px 20px;
-} */
+.hero-text-bottom {
+    color: #fff;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 20px 10px;
+    /* background: rgba(0,0,0,.5); */
+}
+
+.row h5 {
+    line-height: 2;
+}
 
 
 /*----------------------Footer */
@@ -118,3 +136,10 @@ footer {
     padding: 30px 25px 2px 2px;
     font-size: 12px;
 }
+
+/*----------------------Media Queries */
+/* @media screen and (max-width: 480px) {
+    .hero-image {
+         width: 100%;
+    }
+} */
