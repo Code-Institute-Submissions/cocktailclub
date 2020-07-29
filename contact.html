@@ -17,14 +17,14 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light sticky-top">
-        <a href="index.html">
+        <a class="navbar-brand" href="index.html">
             <img class="logo" src="assets/images/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>            
         <div class="collapse navbar-collapse" id="nav-menu">
-            <ul class="navmenu ml-auto">
+            <ul class="navmenu navbar-nav ml-auto">
                 <li class="navitem">
                     <a href="index.html">Home <i class="fas fa-cocktail" aria-hidden="true"></i></a>
                 </li>
@@ -39,17 +39,20 @@
     </nav>
     <section>
         <div>
-            <h3 class="sectionheader">Contact us below</h3>
+            <h3 class="section-header">Can’t find your favourite cocktail recipe? <br>
+                Let us know below:</h3>
         </div>
     </section>
     <section class="content">
-        <div class="center-form">
+        <div class="contact-image">
+        <div class="form text-center">
             <form onsubmit="return sendMail(this);">
             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
             <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
             <textarea rows="5" name="request" class="form-control" id="request" placeholder="Request" required></textarea>
             <button type="submit" class="btn btn-secondary center-block">Send Request</button>
             </form>
+        </div>
         </div>
     </section>
     <footer>
@@ -86,6 +89,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
 

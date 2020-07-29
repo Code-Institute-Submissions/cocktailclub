@@ -9,9 +9,10 @@ body {
 .section-header {
     font-family: "Poppins", sans-serif;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
     font-weight: 700;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    line-height: 1.5;
 }
 
 /*----------------------Nav */
@@ -56,7 +57,7 @@ body {
 
 /*----------------------Cocktail Search */
 
-/*----------------------Info Page */
+/*----------------------Info */
 .hero-image {   
     height: 70vw;
     background: url("../images/unsplashcocktailequipment.jpg") no-repeat center center;
@@ -94,6 +95,34 @@ body {
     line-height: 2;
 }
 
+/*----------------------Contact */
+.form {
+    padding-top: 50px;
+    margin: 10px auto;
+    max-width: 70%;
+}
+
+.form input {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    text-align: center;
+    background-color: #62ad95;
+    color: #fff;
+    margin: 30px;
+    border: none;
+}
+
+.contact-image {   
+    height: 70vh;
+    background: url("../images/unsplashorangedrinks.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
 
 /*----------------------Footer */
 
@@ -128,7 +157,7 @@ footer {
 }
 
 .socials li a i:hover {
-    color: #419177;
+    color: #62ad95;
 }
 
 .footer-item {
