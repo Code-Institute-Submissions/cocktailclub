@@ -59,7 +59,7 @@ body {
 
 /*----------------------Info */
 .hero-image {   
-    height: 70vw;
+    height: 40vw;
     background: url("../images/unsplashcocktailequipment.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
