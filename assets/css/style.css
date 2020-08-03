@@ -15,10 +15,6 @@ body {
     line-height: 1.5;
 }
 
-.text-center {
-    text-align: center;
-}
-
 /*----------------------Nav */
 .navbar {
     background-color: #fff;
@@ -72,7 +68,18 @@ body {
 /*----------------------Cocktail Search */
 .search-button {
     text-align: center;
-    padding: 10px 20px 20px 10px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: #62ad95;
+    border-radius: 6px;
+    border: none;
+}
+
+.search-button:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .cocktail {
@@ -85,8 +92,23 @@ body {
     text-align: center;
 }
 
+.cocktail-result {
+    font-weight: 300;
+}
+
+.search-image {
+    height: 100vh;
+    background: url("../images/unsplashcocktailpour.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+
+}
+
 /*----------------------Info */
-.hero-image {   
+.info-image {   
     height: 40vw;
     background: url("../images/unsplashcocktailequipment.jpg") no-repeat center center;
     -webkit-background-size: cover;

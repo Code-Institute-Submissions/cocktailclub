@@ -27,29 +27,26 @@ window.onload=function(){
         }
 
         const newInnerHTML = `
-            <div class="row container-fluid">
-                <div class="row">
-                    <div class="col-5">
+            <div class="row container-fluid cocktail-result">
+                <div class="row justify-content-around">
+                    <div class="col-md-5 col-12">
                         <img class="cocktail-image" src="${cocktail.strDrinkThumb}" alt="Cocktail Image">
                     </div>
-                    <div class="col-7 text-center">
-                        <h4>${cocktail.strDrink}</h4>
+                    <div class="col-md-7 col-12">
+                        <h3>${cocktail.strDrink}</h3>
+                        <h5>Ingredients:</h5>
+                        <ul>
+                            ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                        </ul>
+                        
+                        
+                        <h5>Method:</h5>
+                        <p>${cocktail.strInstructions}</p>
                         ${
                         cocktail.strGlass
                             ? `<p><strong>Glass Required:</strong> ${cocktail.strGlass}</p>`
                             : ''
                         }
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5">
-                        <h5>Ingredients:</h5>
-                        <ul>
-                            ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <p>${cocktail.strInstructions}</p>
                     </div>
                 </div>
             </div>
