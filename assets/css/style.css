@@ -15,6 +15,10 @@ body {
     line-height: 1.5;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /*----------------------Nav */
 .navbar {
     background-color: #fff;
@@ -66,6 +70,20 @@ body {
 }
 
 /*----------------------Cocktail Search */
+.search-button {
+    text-align: center;
+    padding: 10px 20px 20px 10px;
+}
+
+.cocktail {
+    margin: 20px;
+}
+
+.cocktail-image {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
 
 /*----------------------Info */
 .hero-image {   

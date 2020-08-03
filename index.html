@@ -7,6 +7,9 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8aee7f1a3a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/cocktail-search.js"></script>    
     <title>Cocktail Club</title>
     
 </head>
@@ -32,32 +35,16 @@
             </ul>
         </div>
     </nav>
-    <section class="content">
+    <section class="content container">
         <h2 class="section-header">Your favourite cocktail recipes, all in one place</h2>
-        <h2>Margarita</h2>
-        <h2>Mojito</h2>
-        <h2>Cosmopolitan</h2>
-        <h2>Tom Collins</h2>
-        <h2>Gin Bramble</h2>
-        <h2>Espresso Martini</h2>
-        <h2>Margarita</h2>
-        <h2>Mojito</h2>
-        <h2>Cosmopolitan</h2>
-        <h2>Tom Collins</h2>
-        <h2>Gin Bramble</h2>
-        <h2>Espresso Martini</h2>
-        <h2>Margarita</h2>
-        <h2>Mojito</h2>
-        <h2>Cosmopolitan</h2>
-        <h2>Tom Collins</h2>
-        <h2>Gin Bramble</h2>
-        <h2>Espresso Martini</h2>
-        <h2>Margarita</h2>
-        <h2>Mojito</h2>
-        <h2>Cosmopolitan</h2>
-        <h2>Tom Collins</h2>
-        <h2>Gin Bramble</h2>
-        <h2>Espresso Martini</h2>
+        <div class="row text-center">
+            <button class="search-button" id="get_cocktail">Find Cocktail <i class="fas fa-cocktail"></i></button>
+        </div>
+        <div id="cocktail" class="row cocktail"></div>
+
+        <!-- <div class="cocktail-form">
+                <input type="text" id="cocktail-recipe">
+            </div> -->
         
     </section>
     <footer>
