@@ -46,7 +46,7 @@ body {
 }
 
 .navitem :hover {
-    color: #62ad95;
+    color: #7fadc3;
 }
 
 .logo {
@@ -71,7 +71,7 @@ body {
     padding: 10px 20px 10px 20px;
     margin-top: 30px;
     font-size: 18px;
-    background-color: #62ad95;
+    background-color: #7fadc3;
     border-radius: 6px;
     border: none;
 }
@@ -80,10 +80,13 @@ body {
     border: none;
     outline: none;
     box-shadow: none;
+    background-color: #7fadc3;
 }
 
 .cocktail {
     margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .cocktail-image {
@@ -96,21 +99,30 @@ body {
     font-weight: 300;
 }
 
+.cocktail-info {
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 7px;
+}
+
+.cocktail-name {
+    padding-top: 20px;
+}
+
 .search-image {
-    height: 100vh;
-    background: url("../images/unsplashcocktailpour.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+    background: url("../images/unsplashcocktaillight.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-
 }
 
 /*----------------------Info */
 .info-image {   
     height: 40vw;
-    background: url("../images/unsplashcocktailequipment.jpg") no-repeat center center;
+    background: url("../images/unsplashcocktaillight.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -176,15 +188,15 @@ body {
 
 button[type="submit"] {
     text-align: center;
-    background-color: #62ad95;
+    background-color: #7fadc3;
     color: #fff;
     margin: 30px;
     border: none;
 }
 
 .contact-image {   
-    height: 70vh;
-    background: url("../images/unsplashorangedrinks.jpg") no-repeat center center;
+    height:75vh;
+    background: url("../images/unsplashcocktaillight.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -225,7 +237,7 @@ footer {
 }
 
 .socials li a i:hover {
-    color: #62ad95;
+    color: #7fadc3;
 }
 
 .footer-item {
@@ -236,13 +248,13 @@ footer {
 
 /*----------------------Media Queries */
 @media screen and (max-width: 840px) {
-    .hero-image {
+    .info-image {
         height: 50vh;
     }
 }
 
 @media screen and (max-width: 440px) {
-    .hero-image {
+    .info-image {
         height: 150vw;
     }
 }
