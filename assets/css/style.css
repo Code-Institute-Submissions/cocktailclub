@@ -10,7 +10,7 @@ body {
     font-family: "Poppins", sans-serif;
     text-align: center;
     padding-top: 20px;
-    font-weight: 700;
+    font-weight: 550;
     padding-bottom: 15px;
     line-height: 1.5;
 }
@@ -18,14 +18,13 @@ body {
 /*----------------------Nav */
 .navbar {
     background-color: #fff;
-    box-shadow: 0px 5px 8px rgba(0,0,0,.2);
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.2);
     width: 100%;
 }
 
 .navmenu {
     list-style: none;
-    padding-top: 35px;
-    padding-bottom: 8px;
+    padding-top: 10px;
 }
 
 .navitem {
@@ -36,8 +35,8 @@ body {
     font-family: "Poppins", sans-serif;
     color: #000;
     text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
 
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -52,8 +51,8 @@ body {
 .logo {
     left: 0;
     right: 0;
-    height: 70px;
-    padding: 5px 2px 2px 15px;
+    height: 45px;
+    padding: 2px 2px 2px 15px;
 }
 
 .navbar-collapse {
@@ -71,6 +70,7 @@ body {
     padding: 10px 20px 10px 20px;
     margin-top: 30px;
     font-size: 18px;
+    font-weight: 300;
     background-color: #7fadc3;
     border-radius: 6px;
     border: none;
@@ -96,7 +96,7 @@ body {
 }
 
 .cocktail-result {
-    font-weight: 300;
+    font-weight: 250;
 }
 
 .cocktail-info {

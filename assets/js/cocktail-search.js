@@ -39,13 +39,12 @@ window.onload=function(){
                             ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
                         </ul>
                         
-                        
                         <h5>Method:</h5>
                         <p>${cocktail.strInstructions}</p>
-                        ${
-                        cocktail.strGlass
-                            ? `<p><strong>Glass Required:</strong> ${cocktail.strGlass}</p>`
-                            : ''
+
+                        ${cocktail.strGlass
+                            ? `<h5>Glass Required: </h5> 
+                            <p>${cocktail.strGlass}</p>` : ''
                         }
                     </div>
                 </div>
