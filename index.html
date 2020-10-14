@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/cocktail-search.js"></script>    
+    <script type="text/javascript" src="assets/js/cocktail-search.js"></script>
+    <script type="text/javascript" src="assets/js/random-cocktail.js"></script>    
     <title>Cocktail Club</title>
     
 </head>
@@ -36,17 +37,20 @@
         </div>
     </nav>
     <section class="content">
-        <h2 class="section-header">Your favourite cocktail recipes, all in one place</h2>
+        
         <div class="search-image">
+            <h2 class="section-header">Your favourite cocktail recipes, all in one place</h2>
 
             <div class="row justify-content-around">
                 <button class="search-button btn-secondary shadow-none" id="get_cocktail">Random Cocktail <i class="fas fa-cocktail"></i></button>
             </div>
             <div id="cocktail" class="row cocktail"></div>
         </div>
-        <!-- <div class="cocktail-form">
+
+        <div class="cocktail-form">
                 <input type="text" id="cocktail-recipe">
-            </div> -->
+                <button></button>
+            </div>
         
     </section>
     <footer>
