@@ -10,7 +10,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/cocktail-search.js"></script>
-    <script type="text/javascript" src="assets/js/random-cocktail.js"></script>    
+       
     <title>Cocktail Club</title>
     
 </head>
@@ -37,20 +37,24 @@
         </div>
     </nav>
     <section class="content">
-        
-        <div class="search-image">
-            <h2 class="section-header">Your favourite cocktail recipes, all in one place</h2>
 
-            <div class="row justify-content-around">
-                <button class="search-button btn-secondary shadow-none" id="get_cocktail">Random Cocktail <i class="fas fa-cocktail"></i></button>
+        <div class="search-image">
+            <h2 class="section-header">Your favourite cocktail recipes, all in one place</h2> 
+            <div class="cocktail-form row"> 
+                <form class="submit" id="submit">
+                    <input type="text" id="cocktail-search" class="cocktail-search" placeholder="Search for a cocktail here...">
+                    <button type="submit" class="search-button btn-secondary" id="search-button">Search</button>
+                    
+                </form>
+                <button class="search-button btn-secondary" id="get_cocktail">Random Cocktail <i class="fas fa-cocktail"></i></button>
+                <label for="cocktail-search" class="error-message">Please enter a cocktail!</label>
+                <div id="result-heading"></div>
+                <div id="cocktail-list" class="cocktail-list"></div>
+                <div id="cocktail"></div>
             </div>
-            <div id="cocktail" class="row cocktail"></div>
         </div>
 
-        <div class="cocktail-form">
-                <input type="text" id="cocktail-recipe">
-                <button></button>
-            </div>
+       
         
     </section>
     <footer>
