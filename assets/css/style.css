@@ -17,6 +17,10 @@ body {
     z-index: 100;
 }
 
+#section-header-dark {
+    color: #000;
+}
+
 /*----------------------Nav */
 .navbar {
     background-color: #fff;
@@ -346,6 +350,9 @@ footer {
     #search-button {
         width: fit-content;
         margin: 20px auto 20px auto;
+    }
+    .hero-text-top {
+        padding: 0px 10px 10px 20px;
     }
 }
 
