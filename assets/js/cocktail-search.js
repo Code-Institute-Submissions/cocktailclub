@@ -1,31 +1,35 @@
 window.onload=function(){
-    //----------Search for Cocktail----------
+    
     const search = document.getElementById("cocktail-search");
     const submit = document.getElementById("submit");
     const result_heading = document.getElementById("result-heading");
     const cocktail_list = document.getElementById("cocktail-list")
     const cocktail_recipe = document.getElementById("cocktail");
+    const get_cocktail_btn = document.getElementById("get_cocktail");
 
     submit.addEventListener("submit", searchCocktails);
 
+    //search cocktail from API
     function searchCocktails(e) {
         e.preventDefault();
-
+        
+        //clear anything that is there
         cocktail_recipe.innerHTML = "";
 
-        const term = search.value;
+        //get 
+        const input = search.value;
 
-        if(term == "") {
+        //ensure search not empty
+        if(input == "") {
             $('.cocktail-search').addClass('error');
             $('.error-message').css('display', 'block').css('height', '100%');
         } else {
             $('.cocktail-search').removeClass('error');
             $('.error-message').css('display', 'none');
-            fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${term}`)
+            fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${input}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                result_heading.innerHTML = `<h3 class="section-header">Search results for '${term}':</h3>`;
+                result_heading.innerHTML = `<h3 class="section-header">Search results for '${input}':</h3>`;
 
                 if(data.drinks == null) {
                     result_heading.innerHTML = `<p>No cocktails found, please try again!</p>`;
@@ -39,25 +43,12 @@ window.onload=function(){
                     .join("");
                 }
             });
+            //remove text from search bar
             search.value = "";
         }
     }
 
-    function getCocktailById(cocktailID) {
-        fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailID}`)
-            .then(res => res.json())
-            .then(data => {
-                const cocktail = data.drinks[0];
-
-                // addCocktailToDOM(cocktail);
-                createCocktail(cocktail);
-            })
-    }
-
-    // function addCocktailToDOM(cocktail) {
-
-    // }
-
+    //find recipes by data element
     cocktail_list.addEventListener("click", e => {
         const cocktailInfo = e.path.find(item => {
             if (item.classList) {
@@ -73,23 +64,18 @@ window.onload=function(){
         }
     })
 
-    
-
-    //----------Random button below----------
-    const get_cocktail_btn = document.getElementById("get_cocktail");
-    //const cocktail_recipe = document.getElementById("cocktail"); - already at top
-
-    get_cocktail_btn.addEventListener("click", () => {
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+    //get cocktail by ID
+    function getCocktailById(cocktailID) {
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailID}`)
             .then(res => res.json())
-            .then(res => {
-                createCocktail(res.drinks[0]);
-            })
-            .catch(e => {
-                console.warn(e);
-            });
-    });
+            .then(data => {
+                const cocktail = data.drinks[0];
 
+                createCocktail(cocktail);
+            })
+    }
+
+    //create cocktail recipe
     const createCocktail = (cocktail) => {
         const ingredients = [];
 
@@ -129,4 +115,21 @@ window.onload=function(){
 
         cocktail_recipe.innerHTML = newInnerHTML;
     };
+    
+
+    //random cocktail
+    get_cocktail_btn.addEventListener("click", () => {
+        result_heading.innerHTML = "";
+        cocktail_list.innerHTML = "";
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+            .then(res => res.json())
+            .then(res => {
+                createCocktail(res.drinks[0]);
+            })
+            .catch(e => {
+                console.warn(e);
+            });
+    });
+
+    
 };
