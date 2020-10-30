@@ -52,6 +52,8 @@ window.onload=function(){
     cocktail_list.addEventListener("click", e => {
         const cocktailInfo = e.path.find(item => {
             if (item.classList) {
+                //hide the cocktail list
+                $('.cocktail-list').css('display', 'none'); 
                 return item.classList.contains("cocktail-thumb");
             } else {
                 return false;
@@ -65,7 +67,7 @@ window.onload=function(){
     })
 
     //get cocktail by ID
-    function getCocktailById(cocktailID) {
+    function getCocktailById(cocktailID) {  
         fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailID}`)
             .then(res => res.json())
             .then(data => {
@@ -74,6 +76,21 @@ window.onload=function(){
                 createCocktail(cocktail);
             })
     }
+
+    //get random cocktail
+    get_cocktail_btn.addEventListener("click", () => {       
+        result_heading.innerHTML = "";
+        cocktail_list.innerHTML = "";
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+            .then(res => res.json())
+            .then(res => {
+                createCocktail(res.drinks[0]);
+            })
+            .catch(e => {
+                console.warn(e);
+            });
+        
+    });
 
     //create cocktail recipe
     const createCocktail = (cocktail) => {
@@ -91,6 +108,7 @@ window.onload=function(){
 
         const newInnerHTML = `
             <div class="row container-fluid cocktail-result">
+                <button class="search-button" onclick="backButton()">Back</button>
                 <div class="row justify-content-around">
                     <div class="col-sm-4 col-12">
                         <img class="cocktail-image" src="${cocktail.strDrinkThumb}" alt="Cocktail Image">
@@ -116,20 +134,10 @@ window.onload=function(){
         cocktail_recipe.innerHTML = newInnerHTML;
     };
     
-
-    //random cocktail
-    get_cocktail_btn.addEventListener("click", () => {
-        result_heading.innerHTML = "";
-        cocktail_list.innerHTML = "";
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-            .then(res => res.json())
-            .then(res => {
-                createCocktail(res.drinks[0]);
-            })
-            .catch(e => {
-                console.warn(e);
-            });
-    });
-
-    
 };
+
+//Button to go back to cocktail list from recipe
+function backButton() {
+    $('.cocktail-list').css('display', 'grid');
+    $('.cocktail-result').css('display', 'none');
+}
