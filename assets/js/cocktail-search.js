@@ -32,7 +32,7 @@ window.onload=function(){
                 result_heading.innerHTML = `<h3 class="section-header">Search results for '${input}':</h3>`;
 
                 if(data.drinks == null) {
-                    result_heading.innerHTML = `<p>No cocktails found, please try again!</p>`;
+                    result_heading.innerHTML = `<p class="no-match">No cocktails found, please try again!</p>`;
                 } else {
                     cocktail_list.innerHTML = data.drinks.map(cocktail => `
                         <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
@@ -53,7 +53,8 @@ window.onload=function(){
         const cocktailInfo = e.path.find(item => {
             if (item.classList) {
                 //hide the cocktail list
-                $('.cocktail-list').css('display', 'none'); 
+                $("#result-heading").css("display", "none");                
+                $(".cocktail-list").css("display", "none"); 
                 return item.classList.contains("cocktail-thumb");
             } else {
                 return false;
@@ -138,6 +139,7 @@ window.onload=function(){
 
 //Button to go back to cocktail list from recipe
 function backButton() {
-    $('.cocktail-list').css('display', 'grid');
-    $('.cocktail-result').css('display', 'none');
+    $("#result-heading").css("display", "block");
+    $(".cocktail-list").css("display", "grid");
+    $(".cocktail-result").css("display", "none");
 }
