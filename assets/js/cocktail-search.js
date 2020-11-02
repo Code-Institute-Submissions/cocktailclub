@@ -79,7 +79,8 @@ window.onload=function(){
     }
 
     //get random cocktail
-    get_cocktail_btn.addEventListener("click", () => {       
+    get_cocktail_btn.addEventListener("click", () => {   
+        // $("#back-button").css("display", "none");    
         result_heading.innerHTML = "";
         cocktail_list.innerHTML = "";
         fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
@@ -99,23 +100,28 @@ window.onload=function(){
 
         for (let i = 1; i <= 20; i++) {
             if (cocktail[`strIngredient${i}`]) {
-                ingredients.push(
-                    `${cocktail[`strIngredient${i}`]} - ${cocktail[`strMeasure${i}`]}`
-                );
+                ingredients.push(`${cocktail[`strIngredient${i}`]} - ${cocktail[`strMeasure${i}`]}`);
             } else {
                 break;
             }
         }
 
         const newInnerHTML = `
-            <div class="row container-fluid cocktail-result">
-                <button class="search-button" onclick="backButton()">Back</button>
-                <div class="row justify-content-around">
-                    <div class="col-sm-4 col-12">
-                        <img class="cocktail-image" src="${cocktail.strDrinkThumb}" alt="Cocktail Image">
+            <div class="container-fluid cocktail-result">
+                <button class="search-button btn-light" id="back-button" onclick="backButton()">Back</button>
+                <div class="row justify-content-around my-auto">
+                    <div class="col-md-4 col-12 mx-auto">
+                        <img class="cocktail-image" src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}">
                     </div>
-                    <div class="col-sm-7 col-12 cocktail-info">
+                    <div class="col-md-7 col-12 mx-auto cocktail-info">
                         <h3 class="cocktail-h">${cocktail.strDrink}</h3>
+
+                        <ul class="categories">
+                            ${cocktail.strCategory ? `<li>${cocktail.strCategory}</li>` : ''}
+                            ${cocktail.strAlcoholic ? `<li>${cocktail.strAlcoholic}</li>` : ''}
+                            
+                        </ul>
+                        
                         <h5>Ingredients:</h5>
                         <ul>
                             ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
@@ -123,10 +129,7 @@ window.onload=function(){
                         
                         <h5>Method:</h5>
                         <p>${cocktail.strInstructions}</p>
-                        ${cocktail.strGlass
-                            ? `<h5>Glass Required: </h5> 
-                            <p>${cocktail.strGlass}</p>` : ''
-                        }
+                        ${cocktail.strGlass ? `<p class="glass-type"><strong>Serve in a ${cocktail.strGlass}</strong></p>` : ''}
                     </div>
                 </div>
             </div>

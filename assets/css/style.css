@@ -93,6 +93,7 @@ body {
     padding: 10px 20px 10px 20px;
     font-size: 18px;
     font-weight: 300;
+    color: #fff;
     background-color: #7fadc3;
     border-radius: 6px;
     border: none;
@@ -207,11 +208,32 @@ body {
 
 .cocktail-h {
     padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.categories {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+
+.categories li {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px 7px 5px 7px;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+}
+
+.glass-type {
+    padding: 5px;
+    margin: 5px 10px 5px 10px;
+    display: table-cell;
 }
 
 .search-image {
     background-size: cover;
-    min-height: 80vh;
+    min-height: 85vh;
     background: url("../images/unsplashcocktaillight.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -278,9 +300,9 @@ body {
 
 /*----------------------Contact */
 .form {
-    padding-top: 50px;
+    padding: 50px 20px 20px 20px;
     margin: 10px auto;
-    max-width: 70%;
+    max-width: 600px;
 }
 
 .form input {
@@ -296,7 +318,7 @@ button[type="submit"] {
 }
 
 .contact-image {   
-    height:75vh;
+    height: 85vh;
     background: url("../images/unsplashcocktaillight.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -359,7 +381,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .header {
         font-size: 3.5rem;
     }
@@ -385,6 +407,18 @@ footer {
         width: fit-content;
         margin: 20px auto;
     }
+    .cocktail-image {
+        width: 80%;
+        margin: 10px;
+        justify-items: center;
+    }
+
+    .cocktail-info {
+        max-width: 90%;
+        margin: 10px 20px 50px 20px;
+        padding: 20px;
+        justify-items: center;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -397,6 +431,7 @@ footer {
         grid-gap: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
+        justify-items: center;
     }
     .cocktail-thumb {
         height: 250px;
@@ -404,6 +439,12 @@ footer {
     }
     .hero-text-top {
         padding: 0px 10px 10px 20px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .contact-image {   
+        height: fit-content;
     }
 }
 
