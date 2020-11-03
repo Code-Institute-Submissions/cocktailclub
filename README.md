@@ -66,7 +66,13 @@ I have also trialed the site on Chrome and Safari to ensure it works fine on bot
 * <a href="https://jshint.com/" target="_blank">JSHint</a> was used to check the JavaScript on the site - No errors or warnings
 
 ####Manual Testing
+* Different types of cocktail names were searched for including ones that do not exist to see what happened.
+* The site was tested on a MacBook, a desktop screen, an iPad, an iPhone XS Max and an iPhone 8 to test the site looks good and is responsive to all screen sizes.
+* 
 
+#####Bugs/Errors found
+* If something types in such as 'adfsgs' this would not bring up any results, to get round this I used JS to display an error message to say 'No cocktails found, please try again!', I also added an error message if the input was left blank.
+* Another bug that was found was that the onclick() functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. ***FIXED***
 
 ## Deployment
 This site is hosted on GitHub using GitHub pages, deployed directly from the master branch. The site will update automatically after any new commits from the master branch. 
