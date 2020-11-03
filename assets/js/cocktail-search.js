@@ -3,7 +3,7 @@ window.onload=function(){
     const search = document.getElementById("cocktail-search");
     const submit = document.getElementById("submit");
     const result_heading = document.getElementById("result-heading");
-    const cocktail_list = document.getElementById("cocktail-list")
+    const cocktail_list = document.getElementById("cocktail-list");
     const cocktail_recipe = document.getElementById("cocktail");
     const get_cocktail_btn = document.getElementById("get_cocktail");
 
@@ -65,7 +65,7 @@ window.onload=function(){
             const cocktailID = cocktailInfo.getAttribute("data-cocktailid");
             getCocktailById(cocktailID);
         }
-    })
+    });
 
     //get cocktail by ID
     function getCocktailById(cocktailID) {  
@@ -75,7 +75,7 @@ window.onload=function(){
                 const cocktail = data.drinks[0];
 
                 createCocktail(cocktail);
-            })
+            });
     }
 
     //get random cocktail

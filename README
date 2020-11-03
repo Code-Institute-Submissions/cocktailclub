@@ -56,6 +56,16 @@ As it is key that the website is responsive so that it can be viewed on all kind
 I have tested the webpage on 2 different mobile devices (iPhone XS & OnePlus) also on a large desktop as well as a smaller Macbook desktop screen. 
 I have also trialed the site on Chrome and Safari to ensure it works fine on both.
 
+####HTML
+* <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a> to check the markup validity of the Web documents in HTML - No errors or warnings
+
+####CSS
+* <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a> to check the markup validity of Web documents in CSS - No errors or warnings
+
+####JavaScript
+* <a href="https://jshint.com/" target="_blank">JSHint</a> was used to check the JavaScript on the site - No errors or warnings
+
+####Manual Testing
 
 
 ## Deployment
