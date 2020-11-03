@@ -16,7 +16,7 @@ window.onload=function(){
         //clear anything that is there
         cocktail_recipe.innerHTML = "";
 
-        //get 
+        //get input from search bar
         const input = search.value;
 
         //ensure search not empty
@@ -79,8 +79,7 @@ window.onload=function(){
     }
 
     //get random cocktail
-    get_cocktail_btn.addEventListener("click", () => {   
-        // $("#back-button").css("display", "none");    
+    get_cocktail_btn.addEventListener("click", () => {      
         result_heading.innerHTML = "";
         cocktail_list.innerHTML = "";
         fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')

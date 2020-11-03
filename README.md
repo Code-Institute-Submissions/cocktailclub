@@ -7,9 +7,9 @@ A website that uses <a href="https://www.thecocktaildb.com/api.php" target="_bla
 ## Demo
 Live demo can be viewed <a href="https://fayskerritt.github.io/cocktailclub/" target="_blank">here</a>
 
-(link to mockup)
+![](mockup/mockup.png)
 
-##UX
+## UX
 * A simple layout provides ease of use to users from the homepage
 * The site is responsive across all screen sizes
 * Inputs use placeholders as well as error messages in place to clearly describe what needs to be entered by user
@@ -42,7 +42,15 @@ Figma was used to design a wireframe, you can view it <a href="https://www.figma
 * The font Poppins is very easily read and is a modern font that looks nice.
 
 ## Features
-* 
+* Use of the API - <a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB</a> to build a recipe search website using Javascript and JQuery.
+* Bootstrap grid system used in certain areas to ensure responsiveness on all screen sizes.
+* Sticky/Fixed Navbar - gives user a sense of control and allows them to use the links to jump to any section on the site at any time.
+* Collapsing Navbar - Navbar will collapse and replaced by a hamburger menu on smaller screens (below 768px) for a cleaner look.
+* Recipe search functionality allows user to search the name of a cocktail and will display a grid of all matching recipes.
+* Full recipe view showing the cocktail categories, instructions, method and glass to use.
+* Random recipe generator - button to display a random cocktail recipe.
+* Hide and show grid when viewing each recipe for ease of viewing with a 'Back' button to go back to the grid.
+* Contact form to allow users to request new recipes for the site.
 
 ## Technologies
 1. HTML5 - to create content for website
@@ -72,7 +80,7 @@ I have also trialed the site on Chrome and Safari to ensure it works fine on bot
 
 ##### Bugs/Errors found
 * If something types in such as 'adfsgs' this would not bring up any results, to get round this I used JS to display an error message to say 'No cocktails found, please try again!', I also added an error message if the input was left blank.
-* Another bug that was found was that the onclick() functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. ***FIXED***
+* Another bug that was found was that the onclick() functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. ***HOW TO FIX THIS***
 
 ## Deployment
 This site is hosted on GitHub using GitHub pages, deployed directly from the master branch. The site will update automatically after any new commits from the master branch. 
@@ -80,8 +88,7 @@ So that the site deploys correctly the landing page has been named `index.html`.
 
 ## Credits
 #### Content
-* Fixed Background with radial gradient was copied from - <a href="https://www.w3schools.com/howto/howto_js_sticky_header.asp" target="_blank">W3schools.com</a>
-* Work Experience Timeline was copied from - <a href="https://bootsnipp.com/snippets/xrKXW" target="_blank">Bootsnip.com</a>
+* ADD IN ANYTHING ELSE HERE?
 * Media Queries for Responsive text were copied from - <a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp" target="_blank">W3schools.com</a>
 
 #### Media
@@ -89,5 +96,5 @@ So that the site deploys correctly the landing page has been named `index.html`.
 * The site logo is my own as well as the other line drawings on the Info page.
 
 #### Acknowledgements
-* 
+* ??
 
