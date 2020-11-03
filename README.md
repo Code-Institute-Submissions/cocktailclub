@@ -51,26 +51,26 @@ Figma was used to design a wireframe, you can view it <a href="https://www.figma
 4. <a href="https://www.figma.com/file/RdOmB4ks8GmqkZWuD6E7LU/Milestone-1-wireframe?node-id=212512%3A0" target="_blank">Figma</a> - to create wireframes
 5. <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - as a responsive template to personalise with own CSS
 
-##Testing
+## Testing
 As it is key that the website is responsive so that it can be viewed on all kinds of devices and programs;
 I have tested the webpage on 2 different mobile devices (iPhone XS & OnePlus) also on a large desktop as well as a smaller Macbook desktop screen. 
 I have also trialed the site on Chrome and Safari to ensure it works fine on both.
 
-####HTML
+#### HTML
 * <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a> to check the markup validity of the Web documents in HTML - No errors or warnings
 
-####CSS
+#### CSS
 * <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a> to check the markup validity of Web documents in CSS - No errors or warnings
 
-####JavaScript
+#### JavaScript
 * <a href="https://jshint.com/" target="_blank">JSHint</a> was used to check the JavaScript on the site - No errors or warnings
 
-####Manual Testing
+#### Manual Testing
 * Different types of cocktail names were searched for including ones that do not exist to see what happened.
 * The site was tested on a MacBook, a desktop screen, an iPad, an iPhone XS Max and an iPhone 8 to test the site looks good and is responsive to all screen sizes.
 * 
 
-#####Bugs/Errors found
+##### Bugs/Errors found
 * If something types in such as 'adfsgs' this would not bring up any results, to get round this I used JS to display an error message to say 'No cocktails found, please try again!', I also added an error message if the input was left blank.
 * Another bug that was found was that the onclick() functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. ***FIXED***
 
