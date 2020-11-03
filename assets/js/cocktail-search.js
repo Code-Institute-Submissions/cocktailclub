@@ -85,7 +85,7 @@ window.onload=function(){
         fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
             .then(res => res.json())
             .then(res => {
-                createCocktail(res.drinks[0]);
+                createCocktail(res.drinks[0], false);
             })
             .catch(e => {
                 console.warn(e);
@@ -94,7 +94,7 @@ window.onload=function(){
     });
 
     //create cocktail recipe
-    const createCocktail = (cocktail) => {
+    const createCocktail = (cocktail, showBackButton = true) => {
         const ingredients = [];
 
         for (let i = 1; i <= 20; i++) {
@@ -107,7 +107,7 @@ window.onload=function(){
 
         const newInnerHTML = `
             <div class="container-fluid cocktail-result">
-                <button class="search-button btn-light" id="back-button" onclick="backButton()">Back</button>
+                ${showBackButton ? '<button class="search-button btn-light" id="back-button" onclick="backButton()">Back</button>' : ''}
                 <div class="row justify-content-around my-auto">
                     <div class="col-md-4 col-12 mx-auto">
                         <img class="cocktail-image" src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}">
