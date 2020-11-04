@@ -87,9 +87,9 @@ window.onload=function(){
             .then(res => {
                 createCocktail(res.drinks[0], false);
             })
-            .catch(e => {
-                console.warn(e);
-            });
+            // .catch(e => {
+            //     console.warn(e);
+            // }); ---Do I need this bit as I have never had an error
         
     });
 
@@ -107,7 +107,7 @@ window.onload=function(){
 
         const newInnerHTML = `
             <div class="container-fluid cocktail-result">
-                ${showBackButton ? '<button class="search-button btn-light" id="back-button" onclick="backButton()">Back</button>' : ''}
+                
                 <div class="row justify-content-around my-auto">
                     <div class="col-md-4 col-12 mx-auto">
                         <img class="cocktail-image" src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}">
@@ -122,13 +122,16 @@ window.onload=function(){
                         </ul>
                         
                         <h5>Ingredients:</h5>
-                        <ul>
-                            ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                        <ul class="ingredients-list">
+                            ${ingredients.map(ingredient => `<li><i class="fas fa-caret-right"></i>  ${ingredient}</li>`).join('')}
                         </ul>
                         
                         <h5>Method:</h5>
                         <p>${cocktail.strInstructions}</p>
                         ${cocktail.strGlass ? `<p class="glass-type"><strong>Serve in a ${cocktail.strGlass}</strong></p>` : ''}
+                    </div>
+                    <div class="text-center"> 
+                        ${showBackButton ? '<button class="button btn-light" onclick="backButton()">Back</button>' : ''}
                     </div>
                 </div>
             </div>

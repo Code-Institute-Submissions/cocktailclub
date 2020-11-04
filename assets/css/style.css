@@ -88,8 +88,9 @@ body {
 
 }
 
-.search-button {
+.button {
     padding: 10px 20px 10px 20px;
+    margin: 20px;
     font-size: 18px;
     font-weight: 300;
     color: #fff;
@@ -98,7 +99,7 @@ body {
     border: none;
 }
 
-.search-button:active {
+.button:active {
     border: none;
     outline: none;
     box-shadow: none;
@@ -182,6 +183,7 @@ body {
 .cocktail-result {
     font-weight: 300;
     padding-top: 40px;
+    margin-bottom: 30px;
 }
 
 .cocktail-image {
@@ -193,9 +195,9 @@ body {
 }
 
 .cocktail-info {
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(201, 214, 220, 0.9); 
     border-radius: 7px;
-    margin: 10px 10px 50px 10px;
+    margin: 10px 10px 20px 10px;
     padding-bottom: 20px;
 }
 
@@ -203,6 +205,21 @@ body {
     border-top: 1px rgb(10, 10, 10) dashed;
     margin-top: 15px;
     padding-top: 10px;
+}
+
+.ingredients-list {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.ingredients-list li {
+    background-color: rgb(108 148 167);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 7px 5px 7px;
+    margin: 0 5px 5px 0;
+    width: fit-content;
 }
 
 .cocktail-h {
@@ -218,6 +235,7 @@ body {
 
 .categories li {
     background-color: #fff;
+    color: #6790a3;
     border-radius: 15px;
     padding: 5px 7px 5px 7px;
     margin: 0 5px 5px 0;
@@ -308,12 +326,8 @@ body {
     margin-bottom: 20px;
 }
 
-button[type="submit"] {
-    text-align: center;
-    background-color: #7fadc3;
-    color: #fff;
-    margin: 30px;
-    border: none;
+.contact-header {
+    padding-top: 12vh;
 }
 
 .contact-image {   
@@ -372,9 +386,6 @@ footer {
     .info-image {
         height: 50vh;
     }
-    .cocktail-search {
-        width: 300px;
-    }
     .cocktail-list {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -391,12 +402,14 @@ footer {
         height: 200px;
         width: 200px;
     }
-    #search-button {
-        width: fit-content;
-        margin: 20px auto;
+    .cocktail-search {
+        width: 250px;
+        font-size: 16px;
     }
-    .submit {
-        display: grid;
+    .button {
+        width: fit-content;
+        font-size: 16px;
+        margin: 20px 2px;
     }
     .cocktail-form {
         display: grid;
@@ -423,6 +436,14 @@ footer {
 @media screen and (max-width: 440px) {
     .info-image {
         height: 150vw;
+    }
+    .cocktail-search {
+        width: 220px;
+        padding: 8px 10px 10px 8px;
+        letter-spacing: -0.3px;
+    }
+    .button {
+        margin: 20px 0;
     }
     .cocktail-list {
         display: grid;
