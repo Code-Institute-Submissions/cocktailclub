@@ -36,16 +36,16 @@ window.onload=function(){
                 if(data.drinks == null) {
                     resultHeading.innerHTML = `<p class="no-match">No cocktails found, please try again!</p>`;
                 } else {
-                    let listCockTail = ""
+                    let listCocktail = ""
                     data.drinks.forEach(cocktail => {
-                        listCockTail += `
-                            <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
+                        listCocktail += `
+                            <div class="cocktail-thumb" id="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
                                 <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
                                 <h5 class="cocktail-name">${cocktail.strDrink}</h5>
                             </div>
                         `
                     })
-                    $('#cocktail-list').empty().append(listCockTail)
+                    $('#cocktail-list').empty().append(listCocktail)
                 }
             });
             //remove text from search bar
@@ -53,9 +53,10 @@ window.onload=function(){
         }
     }
 
+    const cocktailThumb = document.getElementById("cocktail-thumb")
 
-    cocktailList.addEventListener("click", showDetail, false);
-    cocktailList.addEventListener("touchstart", showDetail, false);
+    cocktailThumb.addEventListener("click", showDetail, false);
+    cocktailThumb.addEventListener("touchstart", showDetail, false);
     function showDetail(e) {
         const cocktailInfo = e.path.find(item => {
             if (item.classList) {
