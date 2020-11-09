@@ -7,7 +7,7 @@ A website that uses <a href="https://www.thecocktaildb.com/api.php" target="_bla
 ## Demo
 Live demo can be viewed <a href="https://fayskerritt.github.io/cocktailclub/" target="_blank">here</a>
 
-![](mockup/mockup.png)
+![](assets/mockup/mockup.png)
 
 ## UX
 * A simple layout provides ease of use to users from the homepage
