@@ -4,46 +4,10 @@ window.onload=function(){
     const submit = document.getElementById("submit");
     const resultHeading = document.getElementById("result-heading");
     const cocktailList = document.getElementById("cocktail-list");
-    const randomSection = document.getElementById("random-selection")
     const cocktailRecipe = document.getElementById("cocktail");
     const randomButton = document.getElementById("random-cocktail");
     const baseURL = "https://www.thecocktaildb.com/api/json/v1/1/";
 
-
-
-    $(document).ready(function() {
-        fetch(`${baseURL}random.php`)
-            .then(res => res.json())
-            .then(data => {
-                randomSection.innerHTML = data.drinks.map(cocktail => `
-                        <h4 class="section-header">Why not try:</h4>
-                        <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
-                            <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
-                            <h5 class="cocktail-name">${cocktail.strDrink}</h5>
-                        </div>
-                    `)
-            })
-    });
-    
-        
-    
-        // Promise.all([
-        //     fetch(`${baseURL}random.php`).then(res => res.json()),
-        //     fetch(`${baseURL}random.php`).then(res => res.json()),
-        //     fetch(`${baseURL}random.php`).then(res => res.json()),
-        //     fetch(`${baseURL}random.php`).then(res => res.json())
-        // ])
-        // .then(data => { console.log(data)
-        //     let i = 
-        //     cocktailList.innerHTML = data.drinks[i] (cocktail => `
-        //         <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
-        //             <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
-        //             <h5 class="cocktail-name">${cocktail.strDrink}</h5>
-        //         </div>
-        //     `);
-        // });
-    
-    
 
     submit.addEventListener("submit", searchCocktails);
 
