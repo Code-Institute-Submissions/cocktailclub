@@ -39,7 +39,7 @@
                     let listCocktail = ""
                     data.drinks.forEach(cocktail => {
                         listCocktail += `
-                            <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}" >
+                            <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}" onclick="">
                                 <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
                                 <h5 class="cocktail-name">${cocktail.strDrink}</h5>
                             </div>

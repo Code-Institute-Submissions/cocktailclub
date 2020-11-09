@@ -84,8 +84,10 @@ I have also trialed the site on Chrome and Safari to ensure it works fine on bot
 * 
 
 ##### Bugs/Errors found
-* If something types in such as 'adfsgs' this would not bring up any results, to get round this I used JS to display an error message to say 'No cocktails found, please try again!', I also added an error message if the input was left blank.
-* Another bug that was found was that the onclick() functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. ***STILL NEED TO FIX THIS***
+* If the search input does not match a cocktail from the API, tested by typing 'adfsgs' this would not bring up any results, to get round this I used JS to display an error message to say 'No cocktails found, please try again!', I also added an error message if the input was left blank.
+* Certain cocktail recipes had incomplete data when it came to the measure, therefor I added in code to check whether the value was 'null' and if so to leave it blank.
+* I had planned to add in a random selection of cocktails on the homepage to fill the page a bit more, although to br able to use this feature of the API you need to subscribe and make a monthly payment, therefor this was not implemented to the site.
+* Another bug that was found was that the 'click' functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. I tried to add in 'touchstart' but this also did not solve the issue. It would require a complete restructuring of the JS code which will be added into future developments of the site.
 
 ## Deployment
 This site is hosted on GitHub using GitHub pages, deployed directly from the master branch. The site will update automatically after any new commits from the master branch. 
