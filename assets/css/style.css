@@ -264,10 +264,13 @@ body {
 .random-section {
     border: 2px solid rgb(127, 173, 195, 0.5);
     box-shadow: 0 0 10px 5px rgb(127, 173, 195, 0.5);
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 0 30px 40px 30px;
-    max-width: 1000px;
+    max-width: 400px;
     align-content: center;
+}
+.random-section div {
+    margin: auto;
 }
 
 .random-section h3 {
@@ -283,6 +286,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    padding-bottom: 40px;
 }
 
 /*----------------------Info */

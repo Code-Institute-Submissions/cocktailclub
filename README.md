@@ -56,8 +56,13 @@ Figma was used to design a wireframe, you can view it <a href="https://www.figma
 1. HTML5 - to create content for website
 2. CSS3 - to style HTML content to look nice
 3. JavaScript - to call API calls to retrieve cocktail recipes
-4. <a href="https://www.figma.com/file/RdOmB4ks8GmqkZWuD6E7LU/Milestone-1-wireframe?node-id=212512%3A0" target="_blank">Figma</a> - to create wireframes
-5. <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - as a responsive template to personalise with own CSS
+4. jQuery - ***add link*** - 
+4. <a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB</a> API - to pull cocktail recipes to my site.
+5. <a href="https://www.figma.com/file/RdOmB4ks8GmqkZWuD6E7LU/Milestone-1-wireframe?node-id=212512%3A0" target="_blank">Figma</a> - to create wireframes
+6. <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - as a responsive template to personalise with own CSS
+7. GitHub - ***add link*** - GitHub was used to store the project.
+8. Git - ***add link*** - Git was used for version control by using the Gitpod terminal to add, commit and push the code to GitHub.
+8. Google Fonts - ***add link*** - Google Fonts were used to import the "poppins' font which is used across all pages of the site.
 
 ## Testing
 As it is key that the website is responsive so that it can be viewed on all kinds of devices and programs;
@@ -80,7 +85,7 @@ I have also trialed the site on Chrome and Safari to ensure it works fine on bot
 
 ##### Bugs/Errors found
 * If something types in such as 'adfsgs' this would not bring up any results, to get round this I used JS to display an error message to say 'No cocktails found, please try again!', I also added an error message if the input was left blank.
-* Another bug that was found was that the onclick() functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. ***HOW TO FIX THIS***
+* Another bug that was found was that the onclick() functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. ***STILL NEED TO FIX THIS***
 
 ## Deployment
 This site is hosted on GitHub using GitHub pages, deployed directly from the master branch. The site will update automatically after any new commits from the master branch. 
@@ -88,13 +93,14 @@ So that the site deploys correctly the landing page has been named `index.html`.
 
 ## Credits
 #### Content
-* ADD IN ANYTHING ELSE HERE?
-* Media Queries for Responsive text were copied from - <a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp" target="_blank">W3schools.com</a>
+* Inspiration was taken from the Code Intitute projects included in the Interactive Frontend Development module.
+* Media Queries for Responsive text were copied from - <a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp" target="_blank">W3schools.com</a>.
 
 #### Media
-* The image used for the background of the pages is from Unsplash and can be found <a href="https://unsplash.com/photos/FsYZE4ZZKJY" target="_blank">here</a>
+* The image used for the background of the pages is from Unsplash and can be found <a href="https://unsplash.com/photos/FsYZE4ZZKJY" target="_blank">here</a>.
 * The site logo is my own as well as the other line drawings on the Info page.
 
 #### Acknowledgements
-* ??
+* My mentor for their feedback throughout the project and frequent meetings.
+* Tutor support from the Code Institute tutors.
 
