@@ -36,13 +36,6 @@ window.onload=function(){
                 if(data.drinks == null) {
                     resultHeading.innerHTML = `<p class="no-match">No cocktails found, please try again!</p>`;
                 } else {
-                    // cocktailList.innerHTML = data.drinks.map(cocktail => `
-                    //     <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
-                    //         <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
-                    //         <h5 class="cocktail-name">${cocktail.strDrink}</h5>
-                    //     </div>
-                    // `)
-                    // .join("");
                     let listCockTail = ""
                     data.drinks.forEach(cocktail => {
                         listCockTail += `
@@ -60,25 +53,6 @@ window.onload=function(){
         }
     }
 
-
-    //find recipes by data element
-    // cocktailList.addEventListener("click", e => {
-    //     const cocktailInfo = e.path.find(item => {
-    //         if (item.classList) {
-    //             //hide the cocktail list
-    //             $("#result-heading").css("display", "none");                
-    //             $(".cocktail-list").css("display", "none"); 
-    //             return item.classList.contains("cocktail-thumb");
-    //         } else {
-    //             return false;
-    //         }
-    //     });
-
-    //     if (cocktailInfo) {
-    //         const cocktailID = cocktailInfo.getAttribute("data-cocktailid");
-    //         getCocktailById(cocktailID);
-    //     }
-    // });
 
     cocktailList.addEventListener("click", showDetail, false);
     cocktailList.addEventListener("touchstart", showDetail, false);
@@ -98,7 +72,6 @@ window.onload=function(){
             getCocktailById(cocktailID);
         }
     }
-
     
 
     //get cocktail by ID
@@ -121,10 +94,6 @@ window.onload=function(){
             .then(res => {
                 createCocktail(res.drinks[0], false);
             })
-            // .catch(e => {
-            //     console.warn(e);
-            // }); ---Do I need this bit as never had an error
-        
     });
 
     //create cocktail recipe

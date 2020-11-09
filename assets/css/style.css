@@ -262,22 +262,6 @@ body {
     display: table-cell;
 }
 
-/* .random-section {
-    border: 2px solid rgb(127, 173, 195, 0.5);
-    box-shadow: 0 0 10px 5px rgb(127, 173, 195, 0.5);
-    margin: 40px auto;
-    padding: 0 30px 40px 30px;
-    max-width: 400px;
-    align-content: center;
-}
-.random-section div {
-    margin: auto;
-}
-
-.random-section h3 {
-    font-weight: 300;
-} */
-
 .search-image {
     background-size: cover;
     min-height: 85vh;
