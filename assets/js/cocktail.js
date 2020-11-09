@@ -135,7 +135,6 @@ window.onload=function(){
             if (cocktail[`strIngredient${i}`]) {
                 const quantity = cocktail[`strMeasure${i}`]
                 ingredients.push(`${cocktail[`strIngredient${i}`]} ${ quantity ? `- ${quantity}` : ""}`);
-                // ingredients.push(`${cocktail[`strIngredient${i}`]} - ${cocktail[`strMeasure${i}`] || }`);
             } else {
                 break;
             }
