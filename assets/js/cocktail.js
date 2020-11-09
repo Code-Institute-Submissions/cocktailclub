@@ -2,10 +2,31 @@ window.onload=function(){
     
     const search = document.getElementById("cocktail-search");
     const submit = document.getElementById("submit");
-    const result_heading = document.getElementById("result-heading");
-    const cocktail_list = document.getElementById("cocktail-list");
-    const cocktail_recipe = document.getElementById("cocktail");
-    const get_cocktail_btn = document.getElementById("get_cocktail");
+    const resultHeading = document.getElementById("result-heading");
+    const cocktailList = document.getElementById("cocktail-list");
+    // const randomSection = document.getElementById("random-selection")
+    const cocktailRecipe = document.getElementById("cocktail");
+    const randomButton = document.getElementById("random-cocktail");
+    const baseURL = "https://www.thecocktaildb.com/api/json/v1/1/";
+
+    
+        Promise.all([
+            fetch(`${baseURL}random.php`).then(res => res.json()),
+            fetch(`${baseURL}random.php`).then(res => res.json()),
+            fetch(`${baseURL}random.php`).then(res => res.json()),
+            fetch(`${baseURL}random.php`).then(res => res.json())
+        ])
+        .then(data => { console.log(data)
+            let i = 
+            cocktailList.innerHTML = data.drinks[i] (cocktail => `
+                <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
+                    <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
+                    <h5 class="cocktail-name">${cocktail.strDrink}</h5>
+                </div>
+            `);
+        });
+    
+    
 
     submit.addEventListener("submit", searchCocktails);
 
@@ -13,8 +34,8 @@ window.onload=function(){
     function searchCocktails(e) {
         e.preventDefault();
         
-        //clear anything that is there
-        cocktail_recipe.innerHTML = "";
+        //clear search bar
+        cocktailRecipe.innerHTML = "";
 
         //get input from search bar
         const input = search.value;
@@ -26,15 +47,15 @@ window.onload=function(){
         } else {
             $('.cocktail-search').removeClass('error');
             $('.error-message').css('display', 'none');
-            fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${input}`)
+            fetch(`${baseURL}search.php?s=${input}`)
             .then(res => res.json())
-            .then(data => {
-                result_heading.innerHTML = `<h3 class="section-header">Search results for '${input}':</h3>`;
+            .then(data => { console.log(data);
+                resultHeading.innerHTML = `<h3 class="section-header">Search results for '${input}':</h3>`;
 
                 if(data.drinks == null) {
-                    result_heading.innerHTML = `<p class="no-match">No cocktails found, please try again!</p>`;
+                    resultHeading.innerHTML = `<p class="no-match">No cocktails found, please try again!</p>`;
                 } else {
-                    cocktail_list.innerHTML = data.drinks.map(cocktail => `
+                    cocktailList.innerHTML = data.drinks.map(cocktail => `
                         <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
                             <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
                             <h5 class="cocktail-name">${cocktail.strDrink}</h5>
@@ -49,7 +70,7 @@ window.onload=function(){
     }
 
     //find recipes by data element
-    cocktail_list.addEventListener("click", e => {
+    cocktailList.addEventListener("click", e => {
         const cocktailInfo = e.path.find(item => {
             if (item.classList) {
                 //hide the cocktail list
@@ -69,7 +90,7 @@ window.onload=function(){
 
     //get cocktail by ID
     function getCocktailById(cocktailID) {  
-        fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailID}`)
+        fetch(`${baseURL}lookup.php?i=${cocktailID}`)
             .then(res => res.json())
             .then(data => {
                 const cocktail = data.drinks[0];
@@ -79,17 +100,17 @@ window.onload=function(){
     }
 
     //get random cocktail
-    get_cocktail_btn.addEventListener("click", () => {      
-        result_heading.innerHTML = "";
-        cocktail_list.innerHTML = "";
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+    randomButton.addEventListener("click", () => {      
+        resultHeading.innerHTML = "";
+        cocktailList.innerHTML = "";
+        fetch(`${baseURL}random.php`)
             .then(res => res.json())
             .then(res => {
                 createCocktail(res.drinks[0], false);
             })
             // .catch(e => {
             //     console.warn(e);
-            // }); ---Do I need this bit as I have never had an error
+            // }); ---Do I need this bit as never had an error
         
     });
 
@@ -137,7 +158,7 @@ window.onload=function(){
             </div>
         `;
 
-        cocktail_recipe.innerHTML = newInnerHTML;
+        cocktailRecipe.innerHTML = newInnerHTML;
     };
     
 };
@@ -148,3 +169,5 @@ function backButton() {
     $(".cocktail-list").css("display", "grid");
     $(".cocktail-result").css("display", "none");
 }
+
+

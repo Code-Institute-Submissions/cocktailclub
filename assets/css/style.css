@@ -130,6 +130,9 @@ body {
     display: none;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 .no-match {
@@ -152,6 +155,15 @@ body {
     height: 180px;
     width: 180px;
     text-align: center;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.cocktail-thumb:hover {
+    border: 4.5px #fff solid;
 }
 
 .thumb-image {
@@ -172,9 +184,10 @@ body {
     bottom: 0;
     left: 0;
     color: #fff;
+    font-weight: 300;
     background-color: rgb(43, 43, 43, 0.7);
     border-radius: 8px;
-    padding: 0px 5px 0px 5px;
+    padding: 2px 5px 2px 5px;
     margin-left: 8px;
     display: flex;
 }
@@ -248,6 +261,19 @@ body {
     display: table-cell;
 }
 
+.random-section {
+    border: 2px solid rgb(127, 173, 195, 0.5);
+    box-shadow: 0 0 10px 5px rgb(127, 173, 195, 0.5);
+    margin: 30px auto;
+    padding: 0 30px 40px 30px;
+    max-width: 1000px;
+    align-content: center;
+}
+
+.random-section h3 {
+    font-weight: 300;
+}
+
 .search-image {
     background-size: cover;
     min-height: 85vh;
@@ -261,13 +287,14 @@ body {
 
 /*----------------------Info */
 .info-image {   
-    height: 40vw;
+    height: fit-content;
     background: url("../images/unsplashcocktaillight.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    padding-bottom: 150px;
 }
 .opaque-overlay {
     position: absolute;
@@ -292,13 +319,17 @@ body {
 
 .hero-text-bottom {
     color: #fff;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 50px 10px;
     padding: 10px 10px 20px 20px;
 }
 
-.row h5 {
+.info h5 {
     line-height: 2;
     font-weight: 300;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 15px;
+    display: table;
 }
 
 .tips-icon {
@@ -313,6 +344,7 @@ body {
     font-weight: 300;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 20px;
 }
 
 /*----------------------Contact */
@@ -346,6 +378,7 @@ footer {
     background-color: #fff;
     color: #000;
     text-align: center;
+    border-top: 0.5px solid rgb(56, 55, 55, 0.7);
 }
 
 .footer-logo {
@@ -383,9 +416,6 @@ footer {
 
 /*----------------------Media Queries */
 @media screen and (max-width: 840px) {
-    .info-image {
-        height: 50vh;
-    }
     .cocktail-list {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -394,6 +424,13 @@ footer {
 @media screen and (max-width: 767px) {
     .header {
         font-size: 3.5rem;
+    }
+    .footer-logo {
+        float: none;
+    }
+    .footer-item {
+        float: none;
+        padding-top: 2px;
     }
     .cocktail-list {
         grid-template-columns: repeat(2, 1fr);
@@ -415,7 +452,7 @@ footer {
         display: grid;
         margin: 15px;
     }
-    #get_cocktail {
+    #random-cocktail {
         width: fit-content;
         margin: 20px auto;
     }

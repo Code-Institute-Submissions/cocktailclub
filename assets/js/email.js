@@ -9,7 +9,7 @@ function sendMail(contactForm) {
         "request": contactForm.request.value
     })
     .then(
-        function(response) {
+        function() {
             alert("Email successfully sent");
             fullName.value = "";
             emailAddress.value = "";
