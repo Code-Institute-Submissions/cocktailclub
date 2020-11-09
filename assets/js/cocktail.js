@@ -72,13 +72,23 @@ window.onload=function(){
                 if(data.drinks == null) {
                     resultHeading.innerHTML = `<p class="no-match">No cocktails found, please try again!</p>`;
                 } else {
-                    cocktailList.innerHTML = data.drinks.map(cocktail => `
-                        <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
-                            <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
-                            <h5 class="cocktail-name">${cocktail.strDrink}</h5>
-                        </div>
-                    `)
-                    .join("");
+                    // cocktailList.innerHTML = data.drinks.map(cocktail => `
+                    //     <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
+                    //         <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
+                    //         <h5 class="cocktail-name">${cocktail.strDrink}</h5>
+                    //     </div>
+                    // `)
+                    // .join("");
+                    let listCockTail = ""
+                    data.drinks.forEach(cocktail => {
+                        listCockTail += `
+                            <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
+                                <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
+                                <h5 class="cocktail-name">${cocktail.strDrink}</h5>
+                            </div>
+                        `
+                    })
+                    $('#cocktail-list').empty().append(listCockTail)
                 }
             });
             //remove text from search bar
@@ -86,24 +96,46 @@ window.onload=function(){
         }
     }
 
+
     //find recipes by data element
-    cocktailList.addEventListener("click", e => {
+    // cocktailList.addEventListener("click", e => {
+    //     const cocktailInfo = e.path.find(item => {
+    //         if (item.classList) {
+    //             //hide the cocktail list
+    //             $("#result-heading").css("display", "none");                
+    //             $(".cocktail-list").css("display", "none"); 
+    //             return item.classList.contains("cocktail-thumb");
+    //         } else {
+    //             return false;
+    //         }
+    //     });
+
+    //     if (cocktailInfo) {
+    //         const cocktailID = cocktailInfo.getAttribute("data-cocktailid");
+    //         getCocktailById(cocktailID);
+    //     }
+    // });
+
+    cocktailList.addEventListener("click", showDetail, false);
+    cocktailList.addEventListener("touchstart", showDetail, false);
+    function showDetail(e) {
         const cocktailInfo = e.path.find(item => {
             if (item.classList) {
                 //hide the cocktail list
-                $("#result-heading").css("display", "none");                
-                $(".cocktail-list").css("display", "none"); 
+                $("#result-heading").css("display", "none");
+                $(".cocktail-list").css("display", "none");
                 return item.classList.contains("cocktail-thumb");
             } else {
                 return false;
             }
         });
-
         if (cocktailInfo) {
             const cocktailID = cocktailInfo.getAttribute("data-cocktailid");
             getCocktailById(cocktailID);
         }
-    });
+    }
+
+    
 
     //get cocktail by ID
     function getCocktailById(cocktailID) {  
@@ -137,7 +169,9 @@ window.onload=function(){
 
         for (let i = 1; i <= 20; i++) {
             if (cocktail[`strIngredient${i}`]) {
-                ingredients.push(`${cocktail[`strIngredient${i}`]} - ${cocktail[`strMeasure${i}`]}`);
+                const quantity = cocktail[`strMeasure${i}`]
+                ingredients.push(`${cocktail[`strIngredient${i}`]} ${ quantity ? `- ${quantity}` : ""}`);
+                // ingredients.push(`${cocktail[`strIngredient${i}`]} - ${cocktail[`strMeasure${i}`] || }`);
             } else {
                 break;
             }
@@ -179,6 +213,7 @@ window.onload=function(){
     };
     
 };
+
 
 //Button to go back to cocktail list from recipe
 function backButton() {
