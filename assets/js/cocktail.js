@@ -1,4 +1,4 @@
-window.onload=function(){
+// window.onload=function(){
     
     const search = document.getElementById("cocktail-search");
     const submit = document.getElementById("submit");
@@ -39,7 +39,7 @@ window.onload=function(){
                     let listCocktail = ""
                     data.drinks.forEach(cocktail => {
                         listCocktail += `
-                            <div class="cocktail-thumb" id="cocktail-thumb" data-cocktailID="${cocktail.idDrink}">
+                            <div class="cocktail-thumb" data-cocktailID="${cocktail.idDrink}" >
                                 <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="thumb-image"/>
                                 <h5 class="cocktail-name">${cocktail.strDrink}</h5>
                             </div>
@@ -53,11 +53,10 @@ window.onload=function(){
         }
     }
 
-    const cocktailThumb = document.getElementById("cocktail-thumb")
 
-    cocktailThumb.addEventListener("click", showDetail, false);
-    cocktailThumb.addEventListener("touchstart", showDetail, false);
-    function showDetail(e) {
+    cocktailList.addEventListener("click", showDetail, false);
+    cocktailList.addEventListener("touchstart", showDetail, false);
+    function showDetail(e) { console.log("hello");
         const cocktailInfo = e.path.find(item => {
             if (item.classList) {
                 //hide the cocktail list
@@ -145,7 +144,7 @@ window.onload=function(){
         cocktailRecipe.innerHTML = newInnerHTML;
     };
     
-};
+// };
 
 
 //Button to go back to cocktail list from recipe

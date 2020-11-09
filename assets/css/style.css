@@ -220,6 +220,7 @@ body {
     border-top: 1px rgb(10, 10, 10) dashed;
     margin-top: 15px;
     padding-top: 10px;
+    padding-left: 10px;
 }
 
 .ingredients-list {
@@ -240,6 +241,7 @@ body {
 .cocktail-h {
     padding-top: 20px;
     padding-bottom: 15px;
+    padding-left: 10px;
 }
 
 .categories {
@@ -257,8 +259,12 @@ body {
     display: inline-block;
 }
 
+.text-center .button {
+    margin-right: 122px;
+}
+
 .glass-type {
-    padding: 5px;
+    padding: 5px 0;
     margin: 5px 10px 5px 10px;
     display: table-cell;
 }
@@ -332,7 +338,7 @@ body {
     margin: auto;
     line-height: 2;
     font-weight: 300;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 15px;
     margin-bottom: 20px;
 }
