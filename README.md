@@ -60,16 +60,16 @@ Figma was used to design a wireframe, you can view it <a href="https://www.figma
 * Contact form to allow users to request new recipes for the site.
 
 ## Technologies
-1. HTML5 - to create content for website
-2. CSS3 - to style HTML content to look nice
-3. JavaScript - to call API calls to retrieve cocktail recipes
-4. jQuery - ***add link*** - 
+1. <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5</a> - to create content for website
+2. <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS3</a> - to style HTML content to look nice
+3. <a href="https://www.javascript.com/" target="_blank">JavaScript</a> - to call API calls to retrieve cocktail recipes.
+4. <a href="https://jquery.com/" target="_blank">jQuery</a> - to simplify the JavaScript written in the project.
 4. <a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB</a> API - to pull cocktail recipes to my site.
-5. <a href="https://www.figma.com/file/RdOmB4ks8GmqkZWuD6E7LU/Milestone-1-wireframe?node-id=212512%3A0" target="_blank">Figma</a> - to create wireframes
-6. <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - as a responsive template to personalise with own CSS
-7. <a href="https://github.com/fayskerritt/cocktailclub" target="_blank">GitHub</a> - GitHub was used to store the project. 
-8. <a href="https://git-scm.com/" target="_blank">Git</a> - Git was used for version control by using the Gitpod terminal to add, commit and push the code to GitHub.
-8. <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Google Fonts</a> - Google Fonts were used to import the "Poppins' font which is used across all pages of the site.
+5. <a href="https://www.figma.com/file/RdOmB4ks8GmqkZWuD6E7LU/Milestone-1-wireframe?node-id=212512%3A0" target="_blank">Figma</a> - to create wireframes.
+6. <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - as a responsive template to personalise with own CSS.
+7. <a href="https://github.com/fayskerritt/cocktailclub" target="_blank">GitHub</a> - used to store the project. 
+8. <a href="https://git-scm.com/" target="_blank">Git</a> - used for version control by using the Gitpod terminal to add, commit and push the code to GitHub.
+8. <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Google Fonts</a> - used to import the "Poppins' font which is used across all pages of the site.
 
 ## Testing
 The W3C Markup and CSS Validator services were used to check each page of the website to ensure no syntax errors. JSHint was also used to check the JavaScript:
@@ -99,7 +99,7 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 * As a returning user, I want to search by cocktail name, so that I can find a cocktail recipe to make at home.
 	- The search bar is centred to the home page with placeholder text to prompt to user of what to type in.
 	- The ‘Search’ button is positioned to the right of the input bar to make it clear of its use.
-	- When the ‘Search’ button is clicked a list of cocktail recipes is displayed below the search bar with a header that states __Search results for ‘users input’__.
+	- When the ‘Search’ button is clicked a list of cocktail recipes is displayed below the search bar with a header that states *Search results for ‘users input’*.
 	- Each of the cocktails in the list is clickable to reveal its full recipe including photo, categories, ingredients and method.
 	- The cocktail recipe card has a ‘Back’ button which allows the user to navigate back to the list to view other recipes matching their search.
 
@@ -119,11 +119,6 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 
 * As a frequent user, I want to be able to find community links to social media so I can follow or view recent posts.
 	- In the footer of each page there are social media icons that link to the relevant platform for users to click on to take them to a new tab in their browser.
-
-### Manual Testing
-* Different types of cocktail names were searched for including ones that do not exist to see what happened.
-* The site was tested on a MacBook, a desktop screen, an iPad, an iPhone XS Max and an iPhone 8 to test the site looks good and is responsive to all screen sizes.
-* 
 
 ### Further Testing
 * The website was viewed on a mobile device (iPhone XS), a large desktop and a smaller Macbook desktop screen. 
