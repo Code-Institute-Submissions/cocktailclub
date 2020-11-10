@@ -54,6 +54,7 @@ function searchCocktails(e) {
 
 //find recipes by data element
 cocktailList.addEventListener("click", showDetail, false);
+cocktailList.addEventListener("touchstart", showDetail, false);
 function showDetail(e) {
     const cocktailInfo = e.path.find(item => {
         if (item.classList) {
