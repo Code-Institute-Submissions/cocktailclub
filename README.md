@@ -85,17 +85,40 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 
 ### Testing User Stories
 ##### First Time Visitor User Stories
-* As a first time user, I want to understand the main purpose of the site to learn more about the .
+* As a first time user, I want to understand the main purpose of the site to learn more about the site's features.
+	- Upon entering the site, users are greeted with a brief but to the point tag line that explains what you are able to do on the website.
+	- The search bar has placeholder text to prompt the user to search for a cocktail, as well as a clearly labelled button to get a random cocktail recipe.
+
 * As a first time user, I want to easily navigate throughout the site to find content.
+	- Each page of the site has a clean navigation bar, each page link describes clearly where the user will end up.
+	- The navigation bar will collapse on a smaller screen and display the hamburger icon which is a well known symbol for the navbar.
+	- In the footer of each page there are clear links to social media platforms alongside a contact icon which links through to the contact page.
+	- The contact page has an alert after the form has been submitted, the form refreshes and the inputs are cleared to make it clear that it was a success.
 
 ##### Returning Visitor User Stories
-* As a user, I want to search by cocktail name, so that I can find a cocktail recipe to make at home.
-* As a user, I want to be given a random cocktail recipe, so that I can get inspiration for making cocktails at home.
-* As a user, I want to learn tips and tricks for making cocktails at home, so that I can prepare what equipment I need for making cocktails at home.
+* As a returning user, I want to search by cocktail name, so that I can find a cocktail recipe to make at home.
+	- The search bar is centred to the home page with placeholder text to prompt to user of what to type in.
+	- The ‘Search’ button is positioned to the right of the input bar to make it clear of its use.
+	- When the ‘Search’ button is clicked a list of cocktail recipes is displayed below the search bar with a header that states __Search results for ‘users input’__.
+	- Each of the cocktails in the list is clickable to reveal its full recipe including photo, categories, ingredients and method.
+	- The cocktail recipe card has a ‘Back’ button which allows the user to navigate back to the list to view other recipes matching their search.
+
+* As a returning user, I want to be given a random cocktail recipe, so that I can get inspiration for making cocktails at home.
+	- The home page has a ‘Random Cocktail’ button which is centred to the page below the search feature, clearly marked.
+	- Once clicked the ‘Random Cocktail’ button will display a full recipe card of a randomly picked cocktail.
+	- The button can be clicked as many times as possible to allow the user as much choice as they need. 
+
+* As a returning user, I want to learn tips and tricks for making cocktails at home, so that I can prepare what equipment I need for making cocktails at home.
+	- The site includes an ‘Info’ page that gives the user information about making cocktails at home
+	- The info page includes images to help explain the tips.
 
 ##### Frequent Visitor User Stories
 * As a frequent user, I want to be able to request for a new recipe to be added to the site, so that I can find all my favourite recipes in one place.
+	- The site includes a contact page which has a clear tagline and form for users to fill in to request new cocktails to be added to the site.
+	- The form has placeholder text to ensure users are clear of what to type in each box.
+
 * As a frequent user, I want to be able to find community links to social media so I can follow or view recent posts.
+	- In the footer of each page there are social media icons that link to the relevant platform for users to click on to take them to a new tab in their browser.
 
 ### Manual Testing
 * Different types of cocktail names were searched for including ones that do not exist to see what happened.
@@ -105,19 +128,46 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 ### Further Testing
 * The website was viewed on a mobile device (iPhone XS), a large desktop and a smaller Macbook desktop screen. 
 * The website was tested on Google Chrome and Safari browsers.
+* Different types of cocktail names were searched for, including ones that do not exist to see what happened. In the case that nothing was found JS was used to display an error message to say ‘No cocktails found, please try again!’, as well as an error message if the input was left blank.
 * All page links and buttons were tested to ensure they are all working properly.
 * Website was shared with friends and family to ensure it works correctly and to point out any issues.
 
 ### Known Bugs/Errors
-* If the search input does not match a cocktail from the API, tested by typing 'adfsgs' this would not bring up any results, to get round this I used JS to display an error message to say 'No cocktails found, please try again!', I also added an error message if the input was left blank.
 * Certain cocktail recipes had incomplete data when it came to the measure, therefor I added in code to check whether the value was 'null' and if so to leave it blank.
-* I had planned to add in a random selection of cocktails on the homepage to fill the page a bit more, although to be able to use this feature of the API you need to subscribe and make a monthly payment, therefor this was not implemented to the site.
-* The 'click' functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. I tried to add in 'touchstart' but this also did not solve the issue. It would require a complete restructuring of the JS code which will be added into future developments of the site.
+* A random selection of cocktails was planned to be added to the homepage to fill the page a bit more, although to be able to use this feature of the API a subscription was needed with a monthly payment, therefor this was not implemented to the site.
+* The 'click' functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. 'touchstart' was added to the JS, however this did not solve the issue. It would require a complete restructuring of the JS code which will be added into future developments of the site.
 
 ## Deployment
-####
+#### GitHub Pages
 This site is hosted on GitHub using GitHub pages, deployed directly from the master branch. The site will update automatically after any new commits from the master branch. 
 So that the site deploys correctly the landing page has been named `index.html`.
+
+The site was deployed to GitHub Pages using the following steps:
+1. Log in to GitHub and go to the relevent repository
+2. Go to 'Settings', which is the final tab across the top of the repository
+3. Find the 'GitHub Pages' section and where it says 'Source' change the dropdown menu from 'None' to 'Master Branch'
+4. This will automatically refresh the page and your published site link will show underneath the 'GitHub Pages' section
+
+#### Forking the GitHub Repository
+Forking the GitHub repository makes a copy of the original repository on your GitHub account so that it can be viewed and changed without affecting the master branch.
+
+The repository can be forked by using the following steps:
+1. Log in to GitHub and go to the relevant repository
+2. In the top right hand corner of the page click the 'Fork' button
+3. This will create a copy of the mster branch for you to edit without affecting the original
+
+#### Making a Local Clone
+You can clone your repository to create a local copy on your computer so that you can sync between the two locations.
+
+The repository can be cloned by using the following steps:
+1. Log in to GitHub and go to the relevant repository
+2. Click on the '<i class="fas fa-download"></i> Code' button to display the dropdown options
+3. Copy the link to clone the repository using HTTPS
+4. Open Git Bash
+5. Change the current directory to the location you want  the cloned directory to be made
+6. Type `git clone` followed by the URL you copied from Step 3 which will look something like this `$ git clone https://github.com/fayskerritt/cocktailclub.git`
+7. Press enter to create your local clone
+For a more detailed explanation see the <a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository" target="_blank">GitHub Docs</a>
 
 ## Credits
 ### Code
