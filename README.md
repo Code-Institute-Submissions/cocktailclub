@@ -18,16 +18,16 @@ Live demo can be viewed <a href="https://fayskerritt.github.io/cocktailclub/" ta
 * Light colours used on a dark background to make the content stand out and easy to read.
 
 ### **User Stories**
-#### First Time Visitor User Stories
+#### - First Time Visitor User Stories
 * As a first time user, I want to understand the main purpose of the site to learn more about the site’s features.
 * As a first time user, I want to easily navigate throughout the site to find content.
 
-#### Returning Visitor User Stories
+#### - Returning Visitor User Stories
 * As a returning user, I want to search by cocktail name, so that I can find a cocktail recipe to make at home.
 * As a returning user, I want to be given a random cocktail recipe, so that I can get inspiration for making cocktails at home.
 * As a returning user, I want to learn tips and tricks for making cocktails at home, so that I can prepare what equipment I need for making cocktails at home.
 
-#### Frequent Visitor User Stories
+#### - Frequent Visitor User Stories
 * As a frequent user, I want to be able to request for a new recipe to be added to the site, so that I can find all my favourite recipes in one place.
 * As a frequent user, I want to be able to find community links to social media so I can follow or view recent posts.
 
@@ -84,7 +84,7 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 * <a href="https://jshint.com/" target="_blank">JSHint</a> was used to check the JavaScript on the site - No errors or warnings.
 
 ### Testing User Stories
-#### First Time Visitor User Stories
+#### - First Time Visitor User Stories
 * As a first time user, I want to understand the main purpose of the site to learn more about the site's features.
 	- Upon entering the site, users are greeted with a brief but to the point tag line that explains what you are able to do on the website.
 	- The search bar has placeholder text to prompt the user to search for a cocktail, as well as a clearly labelled button to get a random cocktail recipe.
@@ -95,7 +95,7 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 	- In the footer of each page there are clear links to social media platforms alongside a contact icon which links through to the contact page.
 	- The contact page has an alert after the form has been submitted, the form refreshes and the inputs are cleared to make it clear that it was a success.
 
-#### Returning Visitor User Stories
+#### - Returning Visitor User Stories
 * As a returning user, I want to search by cocktail name, so that I can find a cocktail recipe to make at home.
 	- The search bar is centred to the home page with placeholder text to prompt to user of what to type in.
 	- The ‘Search’ button is positioned to the right of the input bar to make it clear of its use.
@@ -112,7 +112,7 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 	- The site includes an ‘Info’ page that gives the user information about making cocktails at home.
 	- The info page includes images to help explain the tips.
 
-#### Frequent Visitor User Stories
+#### - Frequent Visitor User Stories
 * As a frequent user, I want to be able to request for a new recipe to be added to the site, so that I can find all my favourite recipes in one place.
 	- The site includes a contact page which has a clear tagline and form for users to fill in to request new cocktails to be added to the site.
 	- The form has placeholder text to ensure users are clear of what to type in each box.
