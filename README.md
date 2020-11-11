@@ -166,7 +166,7 @@ For a more detailed explanation see the <a href="https://docs.github.com/en/free
 
 ## Credits
 ### Code
-* Media Queries for Responsive text came from - <a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp" target="_blank">W3schools.com</a>.
+* Media Queries for Responsive text came from <a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp" target="_blank">W3schools.com</a>.
 * The grid system used across the site came from <a href="https://getbootstrap.com/" target="_blank">Bootstrap4</a>
 
 ### Content
