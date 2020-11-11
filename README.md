@@ -5,51 +5,49 @@
 A website that uses <a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB API</a> to search for cocktail recipes by name as well as the option for a random recipe.
 
 ## Demo
+---------------
 Live demo can be viewed <a href="https://fayskerritt.github.io/cocktailclub/" target="_blank">here</a>
 
 ![](assets/mockup/mockup.png)
 
 ## UX
-* A simple layout provides ease of use to users from the homepage
-* The site is responsive across all screen sizes
-* Inputs use placeholders as well as error messages in place to clearly describe what needs to be entered by user
-* Light colours used on a dark background to make the content stand out and easy to read
+---------------
+* A simple layout provides ease of use to users from the homepage.
+* The site is responsive across all screen sizes.
+* Inputs use placeholders as well as error messages in place to clearly describe what needs to be entered by user.
+* Light colours used on a dark background to make the content stand out and easy to read.
 
-### User Stories
-##### First Time Visitor User Stories
+### **User Stories**
+#### First Time Visitor User Stories
 * As a first time user, I want to understand the main purpose of the site to learn more about the site’s features.
 * As a first time user, I want to easily navigate throughout the site to find content.
 
-##### Returning Visitor User Stories
+#### Returning Visitor User Stories
 * As a returning user, I want to search by cocktail name, so that I can find a cocktail recipe to make at home.
 * As a returning user, I want to be given a random cocktail recipe, so that I can get inspiration for making cocktails at home.
 * As a returning user, I want to learn tips and tricks for making cocktails at home, so that I can prepare what equipment I need for making cocktails at home.
 
-##### Frequent Visitor User Stories
+#### Frequent Visitor User Stories
 * As a frequent user, I want to be able to request for a new recipe to be added to the site, so that I can find all my favourite recipes in one place.
 * As a frequent user, I want to be able to find community links to social media so I can follow or view recent posts.
 
-#### Strategy
-As people are spending a lot more time at home due to the current circumstances it was decided that the Cocktail Club would be aimed at those who want to re-create cocktails in the comfort of their own home. 
-A simple layout was chosen to enable users to easily search for a recipe or get a random recipe if they need inspiration.
+### **Design**
+### Colour Scheme
+* The colour scheme of the website was decided on so that it is eye-catching to the user but also easy to read with light text on a dark background. 
 
-#### Scope
-It was decided that it should be very clear and simple for the user to find their desired recipe, therefor this is the main focus of the homepage. For those users who need inspiration there is also a random button that will display a random recipe.
-The site also includes an Info page which gives users tips and tricks for making cocktails at home, this is not necessary, but it gives the site a nice personal touch.
+### Typography
+* The font 'Poppins' was used because it is very easily read and is a modern font that looks nice.
 
-#### Structure
-The recipe results are displayed in an easy to view grid, each with a photo and the cocktail name. Each recipe can then be expanded to view the whole recipe. In case the user is not happy with that specific recipe there is a back button to allow users to browse each recipe without having to reload the page.
+### Imagery
+* The background image used is very minimal so that it is not a distraction from the main content but still eyecatching and fits in with the colour scheme. 
+* The recipe results are displayed in an easy to view grid, each with a photo and the cocktail name. Each recipe can then be expanded to view the whole recipe. In case the user is not happy with that specific recipe there is a back button to allow users to browse each recipe without having to reload the page.
 
-#### Skeleton
-Figma was used to design a wireframe, you can view it <a href="https://www.figma.com/file/HC618UdxHcbhAvexrrO5Hp/Milestone-2-Wireframes" target="_blank">here</a>
-
-#### Surface
-* The colour theme of the website was decided on so that it is eye-catching to the user but also easy to read with light text on a dark background. 
-* The background image used is very minimal so that it is not a distraction from the main content. 
-* The font Poppins is very easily read and is a modern font that looks nice.
+### Wireframes
+* Figma was used to design the wireframes for both mobile and desktop - <a href="https://www.figma.com/file/HC618UdxHcbhAvexrrO5Hp/Milestone-2-Wireframes" target="_blank">View</a>
 
 ## Features
-* Use of the API - <a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB</a> to build a recipe search website using JavaScript and jQuery.
+---------------
+* Use of <a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB</a> API to build a recipe search website using JavaScript and jQuery.
 * Bootstrap grid system used in certain areas to ensure responsiveness on all screen sizes.
 * Sticky/Fixed Navbar - gives user a sense of control and allows them to use the links to jump to any section on the site at any time.
 * Collapsing Navbar - Navbar will collapse and replaced by a hamburger menu on smaller screens (below 768px) for a cleaner look.
@@ -59,9 +57,9 @@ Figma was used to design a wireframe, you can view it <a href="https://www.figma
 * Hide and show grid when viewing each recipe for ease of viewing with a 'Back' button to go back to the grid.
 * Contact form to allow users to request new recipes for the site.
 
-## Technologies
-1. <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5</a> - to create content for website
-2. <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS3</a> - to style HTML content to look nice
+## Technologies used---------------
+1. <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5</a> - to create content for website.
+2. <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS3</a> - to style HTML content to look nice.
 3. <a href="https://www.javascript.com/" target="_blank">JavaScript</a> - to call API calls to retrieve cocktail recipes.
 4. <a href="https://jquery.com/" target="_blank">jQuery</a> - to simplify the JavaScript written in the project.
 4. <a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB</a> API - to pull cocktail recipes to my site.
@@ -71,7 +69,9 @@ Figma was used to design a wireframe, you can view it <a href="https://www.figma
 8. <a href="https://git-scm.com/" target="_blank">Git</a> - used for version control by using the Gitpod terminal to add, commit and push the code to GitHub.
 8. <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Google Fonts</a> - used to import the "Poppins' font which is used across all pages of the site.
 
+
 ## Testing
+---------------
 The W3C Markup and CSS Validator services were used to check each page of the website to ensure no syntax errors. JSHint was also used to check the JavaScript:
 
 #### HTML
@@ -84,7 +84,7 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 * <a href="https://jshint.com/" target="_blank">JSHint</a> was used to check the JavaScript on the site - No errors or warnings.
 
 ### Testing User Stories
-##### First Time Visitor User Stories
+#### First Time Visitor User Stories
 * As a first time user, I want to understand the main purpose of the site to learn more about the site's features.
 	- Upon entering the site, users are greeted with a brief but to the point tag line that explains what you are able to do on the website.
 	- The search bar has placeholder text to prompt the user to search for a cocktail, as well as a clearly labelled button to get a random cocktail recipe.
@@ -95,7 +95,7 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 	- In the footer of each page there are clear links to social media platforms alongside a contact icon which links through to the contact page.
 	- The contact page has an alert after the form has been submitted, the form refreshes and the inputs are cleared to make it clear that it was a success.
 
-##### Returning Visitor User Stories
+#### Returning Visitor User Stories
 * As a returning user, I want to search by cocktail name, so that I can find a cocktail recipe to make at home.
 	- The search bar is centred to the home page with placeholder text to prompt to user of what to type in.
 	- The ‘Search’ button is positioned to the right of the input bar to make it clear of its use.
@@ -109,10 +109,10 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 	- The button can be clicked as many times as possible to allow the user as much choice as they need. 
 
 * As a returning user, I want to learn tips and tricks for making cocktails at home, so that I can prepare what equipment I need for making cocktails at home.
-	- The site includes an ‘Info’ page that gives the user information about making cocktails at home
+	- The site includes an ‘Info’ page that gives the user information about making cocktails at home.
 	- The info page includes images to help explain the tips.
 
-##### Frequent Visitor User Stories
+#### Frequent Visitor User Stories
 * As a frequent user, I want to be able to request for a new recipe to be added to the site, so that I can find all my favourite recipes in one place.
 	- The site includes a contact page which has a clear tagline and form for users to fill in to request new cocktails to be added to the site.
 	- The form has placeholder text to ensure users are clear of what to type in each box.
@@ -132,8 +132,10 @@ The W3C Markup and CSS Validator services were used to check each page of the we
 * A random selection of cocktails was planned to be added to the homepage to fill the page a bit more, although to be able to use this feature of the API a subscription was needed with a monthly payment, therefor this was not implemented to the site.
 * The 'click' functions did not work on an iPhone, meaning you were unable to click on the grid of cocktails. 'touchstart' was added to the JS, however this did not solve the issue. It would require a complete restructuring of the JS code which will be added into future developments of the site.
 
+
 ## Deployment
-#### GitHub Pages
+---------------
+### GitHub Pages
 This site is hosted on GitHub using GitHub pages, deployed directly from the master branch. The site will update automatically after any new commits from the master branch. 
 So that the site deploys correctly the landing page has been named `index.html`.
 
@@ -143,7 +145,7 @@ The site was deployed to GitHub Pages using the following steps:
 3. Find the 'GitHub Pages' section and where it says 'Source' change the dropdown menu from 'None' to 'Master Branch'
 4. This will automatically refresh the page and your published site link will show underneath the 'GitHub Pages' section
 
-#### Forking the GitHub Repository
+### Forking the GitHub Repository
 Forking the GitHub repository makes a copy of the original repository on your GitHub account so that it can be viewed and changed without affecting the master branch.
 
 The repository can be forked by using the following steps:
@@ -151,7 +153,7 @@ The repository can be forked by using the following steps:
 2. In the top right hand corner of the page click the 'Fork' button
 3. This will create a copy of the mster branch for you to edit without affecting the original
 
-#### Making a Local Clone
+### Making a Local Clone
 You can clone your repository to create a local copy on your computer so that you can sync between the two locations.
 
 The repository can be cloned by using the following steps:
@@ -165,14 +167,14 @@ The repository can be cloned by using the following steps:
 For a more detailed explanation see the <a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository" target="_blank">GitHub Docs</a>
 
 ## Credits
+---------------
 ### Code
 * Media Queries for Responsive text came from <a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp" target="_blank">W3schools.com</a>.
-* The grid system used across the site came from <a href="https://getbootstrap.com/" target="_blank">Bootstrap4</a>
+* The grid system used across the site came from <a href="https://getbootstrap.com/" target="_blank">Bootstrap4</a>.
 
 ### Content
 * Inspiration was taken from the Code Institute projects included in the Interactive Frontend Development module.
 * All content was written by myself.
-
 
 ### Media
 * The image used for the background of the pages is from Unsplash and can be found <a href="https://unsplash.com/photos/FsYZE4ZZKJY" target="_blank">here</a>.

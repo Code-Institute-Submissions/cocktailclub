@@ -9,6 +9,7 @@
     <title>Cocktail Club</title>
 </head>
 <body>
+    <!------------------- Navbar ------------------->
     <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <a href="index.html">
             <img class="logo" src="assets/images/logo.png" alt="logo">
@@ -30,21 +31,22 @@
             </ul>
         </div>
     </nav>
+    <!------------------- Contact container ------------------->
     <section class="content">
         <div class="contact-image">
             <h3 class="section-header contact-header">Can’t find your favourite cocktail recipe? <br>
                 Let us know below:</h3>
-
             <div class="form text-center">
                 <form onsubmit="return sendMail(this);">
                 <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                 <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                 <textarea rows="5" name="request" class="form-control" id="request" placeholder="Request" required></textarea>
-                <button type="submit" class="btn button btn-secondary center-block">Send Request</button>
+                <button type="submit" class="btn button btn-secondary center-block" id="submit-button">Send Request</button>
                 </form>
             </div>
         </div>
     </section>
+    <!------------------- Footer ------------------->
     <footer>
         <div class="row">
             <div class="col-sm-4">
@@ -79,7 +81,7 @@
             </div>
         </div>
     </footer>
-    
+    <!------------------- Scripts ------------------->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://kit.fontawesome.com/8aee7f1a3a.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>

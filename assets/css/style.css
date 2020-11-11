@@ -368,6 +368,10 @@ body {
     position: relative;
 }
 
+#submit-button {
+    margin: 30px auto;
+}
+
 /*----------------------Footer */
 
 footer {
