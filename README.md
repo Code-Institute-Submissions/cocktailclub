@@ -41,7 +41,7 @@ The site also includes an Info page which gives users tips and tricks for making
 The recipe results are displayed in an easy to view grid, each with a photo and the cocktail name. Each recipe can then be expanded to view the whole recipe. In case the user is not happy with that specific recipe there is a back button to allow users to browse each recipe without having to reload the page.
 
 #### Skeleton
-Figma was used to design a wireframe, you can view it <a href="https://www.figma.com/file/RdOmB4ks8GmqkZWuD6E7LU/Milestone-1-wireframe?node-id=212512%3A0" target="_blank">here</a>
+Figma was used to design a wireframe, you can view it <a href="https://www.figma.com/file/HC618UdxHcbhAvexrrO5Hp/Milestone-2-Wireframes" target="_blank">here</a>
 
 #### Surface
 * The colour theme of the website was decided on so that it is eye-catching to the user but also easy to read with light text on a dark background. 
@@ -65,7 +65,7 @@ Figma was used to design a wireframe, you can view it <a href="https://www.figma
 3. <a href="https://www.javascript.com/" target="_blank">JavaScript</a> - to call API calls to retrieve cocktail recipes.
 4. <a href="https://jquery.com/" target="_blank">jQuery</a> - to simplify the JavaScript written in the project.
 4. <a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB</a> API - to pull cocktail recipes to my site.
-5. <a href="https://www.figma.com/file/RdOmB4ks8GmqkZWuD6E7LU/Milestone-1-wireframe?node-id=212512%3A0" target="_blank">Figma</a> - to create wireframes.
+5. <a href="https://www.figma.com/file/HC618UdxHcbhAvexrrO5Hp/Milestone-2-Wireframes" target="_blank">Figma</a> - to create wireframes.
 6. <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - as a responsive template to personalise with own CSS.
 7. <a href="https://github.com/fayskerritt/cocktailclub" target="_blank">GitHub</a> - used to store the project. 
 8. <a href="https://git-scm.com/" target="_blank">Git</a> - used for version control by using the Gitpod terminal to add, commit and push the code to GitHub.
@@ -156,7 +156,7 @@ You can clone your repository to create a local copy on your computer so that yo
 
 The repository can be cloned by using the following steps:
 1. Log in to GitHub and go to the relevant repository
-2. Click on the '<i class="fas fa-download"></i> Code' button to display the dropdown options
+2. Click on the '<kbd>↓</kbd> Code' button to display the dropdown options
 3. Copy the link to clone the repository using HTTPS
 4. Open Git Bash
 5. Change the current directory to the location you want  the cloned directory to be made
